@@ -14,6 +14,3 @@ def download(directory, name="tmp.zip"):
     with ZipFile(zipped,"r") as f:
         f.extractall(directory)
     remove(zipped)
-
-if __name__ == "__main__":
-    download("tmp")
