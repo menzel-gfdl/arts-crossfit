@@ -1,26 +1,11 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Sep 11 12:53:05 2020
-
-@author: Manfred Brath
-
-This script calculates the absorption cross section for a desired species.
-It is intended as an application example.
-
-Usage:
-Run the script
-
-"""
-
 import os
 
 import numpy as np
 
-import Xsec_aux_functions as xaf
+from arts_crossfile import calculate_cross_sections, load_xsec_data
+
 
 # %% paths
-
 script_path = os.path.dirname(os.path.realpath(__file__))
 
 # main plot folder
