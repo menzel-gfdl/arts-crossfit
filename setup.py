@@ -19,5 +19,6 @@ setup(
         "matplotlib",
         "numpy",
         "scipy",
+        "xarray",
     ],
 )

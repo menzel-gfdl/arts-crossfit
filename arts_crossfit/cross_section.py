@@ -7,7 +7,7 @@ from .Xsec_aux_functions import calculate_xsec_fullmodel
 
 class CrossSection(object):
     def __init__(self, formula, directory):
-       """Initializes the object.
+        """Initializes the object.
 
         Args:
             formula: String chemical formula.
