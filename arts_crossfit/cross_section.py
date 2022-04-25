@@ -18,7 +18,7 @@ class CrossSection(object):
         self.formula = formula
         self.path = path
 
-    def calculate_absorption(self, grid, temperature, pressure):
+    def absorption_coefficient(self, grid, temperature, pressure):
         """Calculates absorption cross sections.
 
         Args:
