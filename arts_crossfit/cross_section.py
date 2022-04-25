@@ -1,3 +1,5 @@
+from os.path import join
+
 from numpy import shape, zeros
 from scipy.interpolate import interp1d
 from xarray import open_dataset
@@ -14,7 +16,7 @@ class CrossSection(object):
             directory: Path to the directory containing the data files.
         """
         self.formula = formula
-        self.path = join(directory, f"{formula}.nc")
+        self.path = join(directory, "coefficients", f"{formula}.nc")
 
     def calculate_absorption(self, grid, temperature, pressure):
         """Calculates absorption cross sections.
