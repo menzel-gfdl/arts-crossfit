@@ -8,15 +8,15 @@ from .Xsec_aux_functions import calculate_xsec_fullmodel
 
 
 class CrossSection(object):
-    def __init__(self, formula, directory):
+    def __init__(self, formula, path):
         """Initializes the object.
 
         Args:
             formula: String chemical formula.
-            directory: Path to the directory containing the data files.
+            path: Path to the data file.
         """
         self.formula = formula
-        self.path = join(directory, "coefficients", f"{formula}.nc")
+        self.path = path
 
     def calculate_absorption(self, grid, temperature, pressure):
         """Calculates absorption cross sections.
