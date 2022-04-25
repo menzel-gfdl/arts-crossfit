@@ -29,7 +29,7 @@ class CrossSection(object):
         Returns:
             Numpy array of absorption cross sections in [m2].
         """
-        with open_dataset(self.path, "r") as xsec_data:
+        with open_dataset(self.path) as xsec_data:
             # Convert desired wavenumber to frequency [Hz].
             c0 = 299792458.0  # Speed of light [m s-1].
             freq_user = grid * c0 * 100
