@@ -6,13 +6,13 @@ setup(
     version="1.0.0",
     author="O. Lemke, M. Brath, S. Buehler",
     author_email="",
-    description="",
+    description="Absorption cross section model.",
     url="",
     python_requires=">=3.6",
-    package=find_packages(),
+    packages=find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: MIT",
+        "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
     install_requires=[
