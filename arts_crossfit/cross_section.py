@@ -1,10 +1,8 @@
-from os.path import join
-
 from numpy import shape, zeros
 from scipy.interpolate import interp1d
 from xarray import open_dataset
 
-from .Xsec_aux_functions import calculate_xsec_fullmodel
+from .xsec_aux_functions import calculate_xsec_fullmodel
 
 
 class CrossSection(object):
